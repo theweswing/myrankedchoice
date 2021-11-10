@@ -1,0 +1,175 @@
+{
+    "elections": [
+        {
+            "id": 1,
+            "issue":"Best Kanye Album",
+            "options":[
+                "College Dropout",
+                "Late Registration",
+                "Graduation",
+                "808s & Heartbreaks",
+                "My Beautiful Dark Twisted Fantasy",
+                "Yeezus",
+                "The Life of Pablo",
+                "Ye",
+                "Jesus Is King",
+                "Donda",
+                "N/A"
+            ],
+            "ballots":[
+                {
+                "name":"Wes Schierenbeck",
+                "email":"wschierenbeck@gmail.com",
+                "votes":[
+                    "Graduation",
+                    "My Beautiful Dark Twisted Fantasy",
+                    "808s & Heartbreaks",
+                    "Yeezus",
+                    "College Dropout"
+                ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "issue":"Best Star Wars Movie",
+            "options":[
+                "Episode IV: A New Hope",
+                "Episode V: The Empire Strikes Back",
+                "Episode VI: Return of the Jedi",
+                "Episode I: The Phantom Menace",
+                "Episode II: Attack of the Clones",
+                "Episode III: Revenge of the Sith",
+                "Episode VII: The Force Awakens",
+                "Episode VIII: The Last Jedi",
+                "Episode IX: Rise of Skywalker",
+                "Rogue One: A Star Wars Story",
+                "Solo: A Star Wars Story",
+                "N/A"
+            ],
+            "ballots":[
+                {
+                "name":"Wes Schierenbeck",
+                "email":"wschierenbeck@gmail.com",
+                "votes":[
+                    "Episode VI: Return of the Jedi",
+                    "Episode V: The Empire Strikes Back",
+                    "Episode IV: A New Hope",
+                    "Episode I: The Phantom Menace",
+                    "Episode VII: The Force Awakens"
+                ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "issue":"Best Bagel",
+            "options":[
+                "Everything",
+                "Sesame",
+                "Poppy",
+                "Plain",
+                "Garlic",
+                "Onion",
+                "Egg",
+                "Cinnamon Raisin",
+                "Salt",
+                "N/A"
+            ],
+            "ballots":[
+                {
+                "name":"Wes Schierenbeck",
+                "email":"wschierenbeck@gmail.com",
+                "votes":[
+                    "Everything",
+                    "Sesame",
+                    "Poppy",
+                    "Garlic",
+                    "Onion"
+                ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "issue":"Best Fast Food",
+            "options":[
+                "McDonalds",
+                "Wendy's",
+                "Burger King",
+                "Taco Bell",
+                "KFC",
+                "Chipotle",
+                "Chick-Fil-A",
+                "Subway",
+                "Popeye's",
+                "N/A"
+            ],
+            "ballots":[
+                {
+                "name":"Wes Schierenbeck",
+                "email":"wschierenbeck@gmail.com",
+                "votes":[
+                    "McDonalds",
+                    "Popeye's",
+                    "Wendy's",
+                    "KFC",
+                    "Chick-Fil-A"
+                ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "issue":"Coolest Beatle",
+            "options":[
+                "John Lennon",
+                "Paul McCartney",
+                "George Harrison",
+                "Ringo Starr",
+                "N/A"
+            ],
+            "ballots":[
+                {
+                "name":"Wes Schierenbeck",
+                "email":"wschierenbeck@gmail.com",
+                "votes":[
+                    "Paul McCartney",
+                    "George Harrison",
+                    "John Lennon",
+                    "Ringo Starr"
+                ]
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "issue":"Coolest Member of the Fellowship of the Ring",
+            "options":[
+                "Frodo",
+                "Sam",
+                "Merry",
+                "Pippin",
+                "Gandalf",
+                "Aragorn",
+                "Legolas",
+                "Gimli",
+                "Boromir",
+                "N/A"
+            ],
+            "ballots":[
+                {
+                "name":"Wes Schierenbeck",
+                "email":"wschierenbeck@gmail.com",
+                "votes":[
+                    "Gandalf",
+                    "Gimli",
+                    "Boromir",
+                    "Sam",
+                    "Frodo"
+                ]
+                }
+            ]
+        }
+    ]
+}
