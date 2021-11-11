@@ -95,6 +95,21 @@
       ]
     }
   ],
+  "suggestions":[
+    {
+        "name":"Wes",
+        "email":"wes.schierenbeck@gmail.com",
+        "issue":"dummy submission",
+        "options": [
+            "Option1",
+            "Option2",
+            "Option3",
+            "Option4",
+            "Option5"
+        ],
+        "id":1
+    }
+  ],
   "ballots1": [
     {
       "name": "Wes Schierenbeck",
