@@ -4,13 +4,6 @@ function ElectionForm({issue,options,ballots,id,allElections,setAllElections,act
     const [ballotState,setBallotState]=useState({
         name:"",
         email:""
-        // votes:[
-        //     "",
-        //     "",
-        //     "",
-        //     "",
-        //     ""
-        // ]
     })
     const [firstChoice,setFirstChoice]=useState("")
     const [secondChoice,setSecondChoice]=useState("")
@@ -62,6 +55,10 @@ function ElectionForm({issue,options,ballots,id,allElections,setAllElections,act
         .then((data) => console.log(data))
         e.target.reset()
     }
+    
+    function returnToList(e){
+        setChosenElection("All")
+    }
 
     function spawnOptions(){
         const optionsToDisplay=options.map((givenOption) => {
@@ -71,6 +68,7 @@ function ElectionForm({issue,options,ballots,id,allElections,setAllElections,act
     }
     
     return ( <div id={`${id}+form`} >
+        <button onClick={returnToList}>Return to Menu</button>
         <h2>{issue}</h2>
         <form onSubmit={handleSubmit} name="ballot">
         <label>Name: </label>
@@ -97,7 +95,7 @@ function ElectionForm({issue,options,ballots,id,allElections,setAllElections,act
         <select onChange={handleFifth} name="fifthChoice" id="fifthChoice">
             {spawnOptions()}
         </select><br></br><br></br>
-        <button type="submit">Cast My Vote!</button>
+        <button type="submit">Cast My Vote!</button><br></br><br></br>
         </form>
     </div>
     )

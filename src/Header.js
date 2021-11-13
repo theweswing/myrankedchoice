@@ -40,6 +40,8 @@ const historyRankChoice = (<p>Invented in Europe in the 1850s, Ranked-choice-vot
             <h4>Mission Statement:</h4>
             <p>Promote a greater understanding of New York City civics by allowing users to rank their favorite "X" and watch a ranked-choice-election play out, determining the crowd's anointed best "X"
             </p>
+            <h4 style={{color:"red"}}>Phase 1: Friends And Family</h4>
+            <p style={{color:"red"}}>Data Collection. Please vote on as many issues as you have opinions on! Robust data will make the elections more interesting!</p>
             <button onClick={toggleDisplayWhy}>Why Ranked Choice?</button><br></br>
             {displayWhy? <p id="whyDoRankChoice">{whyRankChoice}</p> :<p></p>}
             <button onClick={toggleDisplayHow} value={!displayHow}>How Does It Work?</button>

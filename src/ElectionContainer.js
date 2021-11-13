@@ -17,11 +17,12 @@ function ElectionContainer({activeElections,allElections,setActiveElections,setA
                 return (givenElection.issue===chosenElection.issue)
             })
             console.log(selectedElection[0])
-            return <ElectionForm issue={selectedElection[0].issue} options={selectedElection[0].options} ballots={selectedElection[0].ballots} id={selectedElection[0].id} allElections={allElections} activeElections={activeElections} setAllElections={setAllElections} setActiveElections={setActiveElections} chosenElection={chosenElection} setChosenElection={setChosenElection} />
+            return <ElectionForm chosenElection={chosenElection} setChosenElection={setChosenElection} issue={selectedElection[0].issue} options={selectedElection[0].options} ballots={selectedElection[0].ballots} id={selectedElection[0].id} allElections={allElections} activeElections={activeElections} setAllElections={setAllElections} setActiveElections={setActiveElections} chosenElection={chosenElection} setChosenElection={setChosenElection} />
         }
     }
 
-    return (<div id="electionContainer">{spawnElections()}</div>)
+    return (<div id="electionContainer">{spawnElections()}
+    </div>)
 }
 
 export default ElectionContainer
