@@ -109,6 +109,33 @@
         "Olive",
         "N/A"
       ]
+    },
+    {
+      "id": 8,
+      "issue": "The NBA GOAT",
+      "options": [
+       "Michael Jordan",
+       "LeBron James",
+       "Kareem Abdul-Jabbar",
+       "Magic Johnson",
+       "Larry Bird",
+       "Wilt Chamberlain",
+       "Bill Russell",
+       "Kobe Bryant",
+       "Shaquille O'Neal",
+       "Tim Duncan"
+      ]
+    },
+    {
+      "id": 9,
+      "issue": "Best Season of The Wire",
+      "options": [
+        "Season 1",
+        "Season 2",
+        "Season 3",
+        "Season 4",
+        "Season 5"
+      ]
     }
   ],
   "suggestions": [
@@ -138,6 +165,17 @@
         "White"
       ],
       "id": 2
+    },
+    {
+      "name": "Wes",
+      "email": "wes.schierenbeck@gmail.com",
+      "issue": "Best Knicks",
+      "options": [
+        "Immanuel Quickley",
+        "Derrick Rose",
+        "Obi Toppin"
+      ],
+      "id": 3
     }
   ],
   "ballots1": [
@@ -245,6 +283,34 @@
         "Pickle",
         "Pepper",
         "Olive"
+      ],
+      "id": 1
+    }
+  ],
+  "ballots8": [
+    {
+      "name": "Wes Schierenbeck",
+      "email": "wschierenbeck@gmail.com",
+      "votes": [
+        "Michael Jordan",
+        "LeBron James",
+        "Kareem Abdul-Jabbar",
+        "Tim Duncan",
+        "Wilt Chamberlain"
+      ],
+      "id": 1
+    }
+  ],
+  "ballots9": [
+    {
+      "name": "Wes Schierenbeck",
+      "email": "wschierenbeck@gmail.com",
+      "votes": [
+        "Season 4",
+        "Season 2",
+        "Season 3",
+        "Season 1",
+        "Season 5"
       ],
       "id": 1
     }
