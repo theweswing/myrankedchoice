@@ -54,6 +54,7 @@ function ElectionForm({issue,options,ballots,id,allElections,setAllElections,act
             body: JSON.stringify(ballotData)})
         .then((r) => r.json())
         .then((data) => console.log(data))
+        alert(`Your ballot has been counted! You will have a say in determining ${issue}`)
         e.target.reset()
     }
     
