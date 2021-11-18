@@ -321,6 +321,18 @@
         "Ringo Starr"
       ],
       "id": 1
+    },
+    {
+      "name": "Wes Schierenbeck",
+      "email": "wes.schierenbeck@gmail.com",
+      "votes": [
+        "George Harrison",
+        "Ringo Starr",
+        "John Lennon",
+        "Paul McCartney",
+        ""
+      ],
+      "id": 2
     }
   ],
   "ballots6": [
