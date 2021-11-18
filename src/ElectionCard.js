@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react"
+import React from "react"
 import styled from "styled-components"
 
 function ElectionCard({chosenElection,setChosenElection,allElections,activeElections,setAllElections,setActiveElections,issue,options,ballots,id}){

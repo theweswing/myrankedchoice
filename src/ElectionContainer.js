@@ -1,4 +1,4 @@
-import React, {useState,useEffect} from "react"
+import React, {useState} from "react"
 import ElectionCard from "./ElectionCard"
 import ElectionForm from "./ElectionForm"
 import styled from "styled-components"
@@ -18,7 +18,16 @@ function ElectionContainer({activeElections,allElections,setActiveElections,setA
                 return (givenElection.issue===chosenElection.issue)
             })
             console.log(selectedElection[0])
-            return <ElectionForm chosenElection={chosenElection} setChosenElection={setChosenElection} issue={selectedElection[0].issue} options={selectedElection[0].options} ballots={selectedElection[0].ballots} id={selectedElection[0].id} allElections={allElections} activeElections={activeElections} setAllElections={setAllElections} setActiveElections={setActiveElections} chosenElection={chosenElection} setChosenElection={setChosenElection} />
+            return <ElectionForm chosenElection={chosenElection} 
+            setChosenElection={setChosenElection} 
+            issue={selectedElection[0].issue} 
+            options={selectedElection[0].options} 
+            ballots={selectedElection[0].ballots} 
+            id={selectedElection[0].id} 
+            allElections={allElections} 
+            activeElections={activeElections} 
+            setAllElections={setAllElections} 
+            setActiveElections={setActiveElections} />
         }
     }
 
