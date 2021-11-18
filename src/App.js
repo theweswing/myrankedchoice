@@ -4,6 +4,7 @@ import React, {useState,useEffect} from "react"
 import Header from './Header'
 import ElectionContainer from './ElectionContainer';
 import SuggestionBox from './SuggestionBox';
+import styled from 'styled-components'
 
 function App() {
 const [allElections,setAllElections]=useState([])
@@ -18,7 +19,7 @@ const [activeElections,setActiveElections]=useState([])
   },[])
 
   return (
-    <div className="App">
+    <div>
       <Header />
       <ElectionContainer allElections={allElections} setAllElections={setAllElections} activeElections={activeElections} setActiveElections={setActiveElections} />
       <SuggestionBox />

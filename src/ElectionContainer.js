@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from "react"
 import ElectionCard from "./ElectionCard"
 import ElectionForm from "./ElectionForm"
+import styled from "styled-components"
 
 function ElectionContainer({activeElections,allElections,setActiveElections,setAllElections}){
     const[chosenElection,setChosenElection]=useState("All")
@@ -21,8 +22,16 @@ function ElectionContainer({activeElections,allElections,setActiveElections,setA
         }
     }
 
-    return (<div id="electionContainer">{spawnElections()}
-    </div>)
+    return (
+    <ElectionsMenu>{
+    spawnElections()}
+    </ElectionsMenu>)
 }
 
 export default ElectionContainer
+
+const ElectionsMenu=styled.div `
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 17.3% `

@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from "react"
+import styled from 'styled-components'
 
 function ElectionForm({issue,options,ballots,id,allElections,setAllElections,activeElections,setActiveElections,chosenElection,setChosenElection}){ 
     const [ballotState,setBallotState]=useState({
@@ -45,7 +46,7 @@ function ElectionForm({issue,options,ballots,id,allElections,setAllElections,act
         e.preventDefault()
         const ballotData={...ballotState,votes:[firstChoice,secondChoice,thirdChoice,fourthChoice,fifthChoice]}
         console.log(ballotData)
-        fetch(`http://localhost:3000/ballots${id}`,{
+        fetch(`${process.env.REACT_APP_API_URL}/ballots${id}`,{
             method: "POST",
             headers: {
               "Content-Type" : "application/json"
@@ -67,10 +68,9 @@ function ElectionForm({issue,options,ballots,id,allElections,setAllElections,act
         return optionsToDisplay
     }
     
-    return ( <div id={`${id}+form`} >
-        <button onClick={returnToList}>Return to Menu</button>
+    return ( <FormContainer>
         <h2>{issue}</h2>
-        <form onSubmit={handleSubmit} name="ballot">
+        <FormDiv onSubmit={handleSubmit} name="ballot">
         <label>Name: </label>
         <input onChange={handleName} type="text"></input><br></br><br></br>
         <label>Email: </label>
@@ -96,9 +96,29 @@ function ElectionForm({issue,options,ballots,id,allElections,setAllElections,act
             {spawnOptions()}
         </select><br></br><br></br>
         <button type="submit">Cast My Vote!</button><br></br><br></br>
-        </form>
-    </div>
+        </FormDiv>
+        <ButtonDiv onClick={returnToList}>Return to Menu</ButtonDiv>
+    </FormContainer>
     )
 }
+
+const FormContainer=styled.div`
+    margin: auto;
+    width: 80%;
+    margin-left: 35%;
+    border-left: 10px;
+    border-right: 10px;`
+
+const FormDiv=styled.form`
+    margin: auto;
+    width: 80%;
+    margin-left: 3%;
+    border-left: 10px;
+    border-right: 10px;`
+
+const ButtonDiv=styled.button`
+margin: auto;
+width: 15%;
+margin-left: 3%;`
 
 export default ElectionForm

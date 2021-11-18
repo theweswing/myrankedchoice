@@ -4,6 +4,7 @@
       "id": 1,
       "issue": "Best Kanye Album",
       "options": [
+        "",
         "College Dropout",
         "Late Registration",
         "Graduation",
@@ -13,14 +14,14 @@
         "The Life of Pablo",
         "Ye",
         "Jesus Is King",
-        "Donda",
-        "N/A"
+        "Donda"
       ]
     },
     {
       "id": 2,
       "issue": "Best Star Wars Movie",
       "options": [
+        "",
         "Episode IV: A New Hope",
         "Episode V: The Empire Strikes Back",
         "Episode VI: Return of the Jedi",
@@ -31,14 +32,14 @@
         "Episode VIII: The Last Jedi",
         "Episode IX: Rise of Skywalker",
         "Rogue One: A Star Wars Story",
-        "Solo: A Star Wars Story",
-        "N/A"
+        "Solo: A Star Wars Story"
       ]
     },
     {
       "id": 3,
       "issue": "Best Bagel",
       "options": [
+        "",
         "Everything",
         "Sesame",
         "Poppy",
@@ -47,14 +48,14 @@
         "Onion",
         "Egg",
         "Cinnamon Raisin",
-        "Salt",
-        "N/A"
+        "Salt"
       ]
     },
     {
       "id": 4,
       "issue": "Best Fast Food",
       "options": [
+        "",
         "McDonalds",
         "Wendy's",
         "Burger King",
@@ -63,25 +64,25 @@
         "Chipotle",
         "Chick-Fil-A",
         "Subway",
-        "Popeye's",
-        "N/A"
+        "Popeye's"
       ]
     },
     {
       "id": 5,
       "issue": "Coolest Beatle",
       "options": [
+        "",
         "John Lennon",
         "Paul McCartney",
         "George Harrison",
-        "Ringo Starr",
-        "N/A"
+        "Ringo Starr"
       ]
     },
     {
       "id": 6,
       "issue": "Coolest Member of the Fellowship of the Ring",
       "options": [
+        "",
         "Frodo",
         "Sam",
         "Merry",
@@ -90,14 +91,14 @@
         "Aragorn",
         "Legolas",
         "Gimli",
-        "Boromir",
-        "N/A"
+        "Boromir"
       ]
     },
     {
       "id": 7,
       "issue": "Best Pizza Topping",
       "options": [
+        "",
         "Pepperoni",
         "Sausage",
         "Onion",
@@ -106,30 +107,31 @@
         "Pepper",
         "Pickle",
         "Anchovy",
-        "Olive",
-        "N/A"
+        "Olive"
       ]
     },
     {
       "id": 8,
       "issue": "The NBA GOAT",
       "options": [
-       "Michael Jordan",
-       "LeBron James",
-       "Kareem Abdul-Jabbar",
-       "Magic Johnson",
-       "Larry Bird",
-       "Wilt Chamberlain",
-       "Bill Russell",
-       "Kobe Bryant",
-       "Shaquille O'Neal",
-       "Tim Duncan"
+        "",
+        "Michael Jordan",
+        "LeBron James",
+        "Kareem Abdul-Jabbar",
+        "Magic Johnson",
+        "Larry Bird",
+        "Wilt Chamberlain",
+        "Bill Russell",
+        "Kobe Bryant",
+        "Shaquille O'Neal",
+        "Tim Duncan"
       ]
     },
     {
       "id": 9,
       "issue": "Best Season of The Wire",
       "options": [
+        "",
         "Season 1",
         "Season 2",
         "Season 3",
@@ -176,6 +178,32 @@
         "Obi Toppin"
       ],
       "id": 3
+    },
+    {
+      "name": "Weds",
+      "email": "wes.schierenbeck@gmail.com",
+      "issue": "Coolest Teletubbie",
+      "options": [
+        "Tinky Winky?",
+        "Dada?"
+      ],
+      "id": 4
+    },
+    {
+      "name": "David",
+      "email": "dv@gmail.com",
+      "issue": "Best Programming Language",
+      "options": [
+        "Python",
+        "Javascript",
+        "HTML",
+        "CSS",
+        "R",
+        "C++",
+        "Java",
+        "Ben"
+      ],
+      "id": 5
     }
   ],
   "ballots1": [
@@ -204,6 +232,42 @@
         "Episode VII: The Force Awakens"
       ],
       "id": 1
+    },
+    {
+      "name": "Someone With Bad Taste",
+      "email": "wes.schierenbeck@gmail.com",
+      "votes": [
+        "Rogue One: A Star Wars Story",
+        "Episode IX: Rise of Skywalker",
+        "Solo: A Star Wars Story",
+        "Episode III: Revenge of the Sith",
+        "Episode II: Attack of the Clones"
+      ],
+      "id": 2
+    },
+    {
+      "name": "George Lucas",
+      "email": "glucas@skywalkerranch.com",
+      "votes": [
+        "Episode IV: A New Hope",
+        "Episode V: The Empire Strikes Back",
+        "Episode VI: Return of the Jedi",
+        "Episode I: The Phantom Menace",
+        "Episode II: Attack of the Clones"
+      ],
+      "id": 3
+    },
+    {
+      "name": "Kathleen Kennedy",
+      "email": "kennedykennedykennedykennedy@disney.com",
+      "votes": [
+        "Episode VII: The Force Awakens",
+        "Episode VIII: The Last Jedi",
+        "Episode IX: Rise of Skywalker",
+        "Rogue One: A Star Wars Story",
+        "Solo: A Star Wars Story"
+      ],
+      "id": 4
     }
   ],
   "ballots3": [

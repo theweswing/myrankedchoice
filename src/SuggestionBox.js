@@ -1,4 +1,5 @@
 import react,{useState,useEffect} from "react"
+import styled from "styled-components"
 
 function SuggestionBox(){
 const [issueSuggestion,setIssueSuggestion]=useState({
@@ -63,7 +64,7 @@ function handleIssueSubmit(e){
     console.log(issueSuggestion)
     setIssueSuggestion({...issueSuggestion,options:submittedOptions})
     console.log(issueSuggestion)
-    fetch(`http://localhost:3000/suggestions`,{
+    fetch(`${process.env.REACT_APP_API_URL}/suggestions`,{
             method: "POST",
             headers: {
               "Content-Type" : "application/json"
@@ -83,16 +84,16 @@ function handleIssueSubmit(e){
 
 if (expandBox===false){
     return (
-        <div>
+        <FormContainer>
             <h2>Suggest New Issue To Vote On</h2>
             <button onClick={expandorCollapseBox}>I have a good one!</button>
-        </div>
+        </FormContainer>
     )}
 else if(expandBox===true){
     return (
-        <div>
-            <h2>Suggest New Issue To Vote On</h2>
-            <form onSubmit={handleIssueSubmit}>
+        <FormContainer>
+            <h2>Suggest New Issue To Vote On</h2><br></br>
+            <FormDiv onSubmit={handleIssueSubmit}>
                 <label>Name: </label>
                 <input onChange={handleChange} type="text" name="name"></input><br></br><br></br>
                 <label>Email: </label>
@@ -100,15 +101,35 @@ else if(expandBox===true){
                 <label>Issue: </label>
                 <input onChange={handleChange} type="text" name="issue"></input><br></br><br></br>
                 {spawnOptions()}
-    <button onClick={addOption}>Add Option</button><br></br>
-            <button type="submit">Submit</button>
-            </form>
-        </div>
+    <ButtonDiv onClick={addOption}>Add Option</ButtonDiv><br></br><br></br>
+            <ButtonDiv type="submit">Submit</ButtonDiv><br></br><br></br>
+            <ButtonDiv onClick={expandorCollapseBox}>Never Mind!</ButtonDiv>
+            </FormDiv>
+        </FormContainer>
     )
 }
 
 
 }
+
+const FormContainer=styled.div`
+    margin: auto;
+    width: 80%;
+    margin-left: 35%;
+    border-left: 10px;
+    border-right: 10px;`
+
+const FormDiv=styled.form`
+    margin: auto;
+    width: 80%;
+    margin-left: 3%;
+    border-left: 10px;
+    border-right: 10px;`
+
+const ButtonDiv=styled.button`
+margin: auto;
+width: 15%;
+margin-left: 3%;`
 
 export default SuggestionBox
 
