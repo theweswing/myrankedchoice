@@ -111,7 +111,6 @@ else if(expandBox===true){
 
 
 }
-
 const FormContainer=styled.div`
     margin: auto;
     width: 80%;
@@ -129,7 +128,8 @@ const FormDiv=styled.form`
 const ButtonDiv=styled.button`
 margin: auto;
 width: 15%;
-margin-left: 3%;`
+margin-left: 3%;
+margin-bottom: 20px;`
 
 export default SuggestionBox
 
