@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react"
+import React,{useState} from "react"
 import styled from 'styled-components'
 
 function ElectionForm({issue,options,ballots,id,allElections,setAllElections,activeElections,setActiveElections,chosenElection,setChosenElection}){ 
